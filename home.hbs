@@ -1,0 +1,25 @@
+{{!< default}}
+
+<main id="main">
+<section class="p-outer">
+    <div>
+            
+            <h1>Maggie is <span id="randWord">...</span>.</h1>
+            <button id="randWordButton">You decide.</button>
+            <button id="addSlashButton">Add a slash?</button>
+        </div>
+    <div class="p-inner p-hero">
+        <div class="p-hero-left">
+       <h2>Some Projects</h2>
+       <div class="p-posts-grid">
+            {{#foreach posts}}
+            <article class="p-post-card">
+                <img src="{{img_url feature_image size='m'}}" alt="{{feature_image_alt}}" />
+                <h3><a href="{{url}}">{{title}}</a></h3>
+            </article>
+            {{/foreach }}
+       </div>
+    </div>
+</section>
+
+</main>

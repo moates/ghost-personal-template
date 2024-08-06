@@ -6,8 +6,10 @@ import "../css/index.css";
 // Import JS
 import menuOpen from "./menuOpen";
 import infiniteScroll from "./infiniteScroll";
+import moRandomWord from "./moRandomWord";
 
 
 // Call the menu and infinite scroll functions
 menuOpen();
 infiniteScroll();
+moRandomWord();
