@@ -25,6 +25,8 @@ production stylesheet in assets/built/screen.css using: npm run dev
 @import "ghost/pagination.css";
 @import "ghost/comments.css";
 
+/* Personal theme components" */
+@import "home.css";
 
 
 /* Main - Your styles here! Edit below
@@ -88,6 +90,14 @@ html,
 .gh-head-actions a:last-child svg {
     height: 2rem;
 }
+
+/* Main - PERSONAL */
+.personal-head-title {
+    font-size: 1.3em;
+    text-wrap: nowrap;
+}
+
+
 
 /* Index
 /* ---------------------------------------------------------- */

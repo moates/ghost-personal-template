@@ -1,6 +1,6 @@
 {
-    "name": "ghost-starter-theme",
-    "description": "A starter theme for Ghost theme development",
+    "name": "ghost-personal-theme",
+    "description": "A Ghost theme for a personal portfolio",
     "demo": "https://starter.ghost.io",
     "version": "1.0.0",
     "engines": {
@@ -18,9 +18,9 @@
         "pretest": "npm run build"
     },
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org"
+        "name": "Maggie Oates",
+        "email": "hello@maggieoates.com",
+        "url": "https://maggieoates.com"
     },
     "gpm": {
         "type": "theme",
@@ -60,7 +60,7 @@
     ],
     "config": {
         "card_assets": true,
-        "posts_per_page": 15,
+        "posts_per_page": 9,
         "image_sizes": {
             "xxs": {
                 "width": 30
