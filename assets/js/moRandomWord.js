@@ -1,4 +1,5 @@
 export default function moRandomWord() {
+    //@TODO eventually move the random words to a yaml or config file or something
     const words = ["an artist", 
         "a programmer",
         "a programmer", 
