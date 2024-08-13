@@ -66,6 +66,7 @@ export default function infiniteScroll() {
 
     let observer = new IntersectionObserver(callback, options);
 
-    observer.observe(document.querySelector('.post:last-of-type'))
+    
+    observer.observe(document.querySelector('.post:last-of-type'));
 
 }

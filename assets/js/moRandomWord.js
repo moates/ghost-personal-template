@@ -41,7 +41,7 @@ export default function moRandomWord() {
 
     addSlashButton.addEventListener('click', function (){
         numSlash += 1;
-        console.log("slash count", numSlash, "out of ", slashMax);
+        //console.log("slash count", numSlash, "out of ", slashMax);
 
         if(numSlash == slashMax - 1){
             addSlashButton.textContent = "How are we expected to be so many things at once?";
@@ -54,7 +54,7 @@ export default function moRandomWord() {
             addSlashButton.textContent = "Add a slash.";
         }
         else{
-            console.log("added slash");
+            //console.log("added slash");
         };        
 
         updateRandWords(numSlash);
@@ -62,7 +62,7 @@ export default function moRandomWord() {
 
     // Utility function to build random words with slashes between
     function updateRandWords(numSlashes) {
-        console.log("numSlashes:", numSlashes);
+        //console.log("numSlashes:", numSlashes);
         let output = words.sample();
         for(let i=0; i<numSlashes; i++){
            output += " / " + words.sample();
