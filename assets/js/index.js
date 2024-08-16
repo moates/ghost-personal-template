@@ -11,5 +11,5 @@ import moRandomWord from "./moRandomWord";
 
 // Call the menu and infinite scroll functions
 menuOpen();
-//infiniteScroll();
+infiniteScroll();
 moRandomWord();
