@@ -1,25 +1,40 @@
 {{!< default}}
-
+ 
 <div class="gh-page">
     <h1>Maggie is <span id="randWord">...</span>.</h1>
     <div><button id="randWordButton">You decide.</button></div> 
     <div><button id="addSlashButton">Add a slash?</button></div> 
 
 
+    <h2>Recent Projects</h2>
     <div class="gh-container">
         <div class="gh-postfeed">
-        {{#foreach posts}}
+            {{#get "posts" filter="tag:hash-project" limit="2" as |projects|}}
+                {{#foreach projects}}
 
-            {{> "card" page=../pagination.page }} {{!-- partials/card.hbs --}}
+                    {{> "card"  }} {{!-- partials/card.hbs --}}
 
-        {{/foreach}}
+                {{/foreach}}
+            {{/get}}
         </div>
 
+        <h2>Recent Blogs</h2>
+        <div class="gh-postfeed">        
+            {{#get "posts" filter="tag:hash-blog" limit="2" as |blogs| }}
+                {{#foreach blogs}}
+
+                    {{> "card"  }} {{!-- partials/card.hbs --}}
+
+                {{/foreach}}
+            {{/get}}
+        </div>
+
+        
         {{!-- If JS isn't enabled, fallback to standard pagination --}}
         <noscript>
             <div class="gh-pagination">
-                {{pagination}}
+                
             </div>
-        </noscript>
+        </noscript>        
     </div>
 </div> 

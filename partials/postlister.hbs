@@ -1,0 +1,17 @@
+<div class="gh-container">
+    <div class="gh-postfeed">
+    {{#foreach posts limit="30"}}
+
+        {{> "card" page=../pagination.page }} {{!-- partials/card.hbs --}}
+
+    {{/foreach}}
+    </div>
+
+    {{!-- If JS isn't enabled, fallback to standard pagination --}}
+    <noscript>
+        <div class="gh-pagination">
+            {{pagination}}
+        </div>
+    </noscript>
+</div>
+

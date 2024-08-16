@@ -29,35 +29,36 @@ export default function moRandomWord() {
     }
     
 
-    const randWordButton = document.getElementById('randWordButton');
-    const addSlashButton = document.getElementById('addSlashButton');
+    //const randWordButton = document.getElementById('randWordButton');
+    //const addSlashButton = document.getElementById('addSlashButton');
     var randWord = document.getElementById('randWord');
 
 
-    randWordButton.addEventListener('click', function () {
-        updateRandWords(numSlash);
+    document.getElementById('randWordButton')?.addEventListener('click', function () {
+         updateRandWords(numSlash);
     });
 
 
-    addSlashButton.addEventListener('click', function (){
-        numSlash += 1;
-        //console.log("slash count", numSlash, "out of ", slashMax);
 
-        if(numSlash == slashMax - 1){
-            addSlashButton.textContent = "How are we expected to be so many things at once?";
-        }
-        if(numSlash == slashMax){
-            addSlashButton.textContent = "It's almost unbearable.";
-        }
-        else if(numSlash > slashMax){
-            numSlash = 0;
-            addSlashButton.textContent = "Add a slash.";
-        }
-        else{
-            //console.log("added slash");
-        };        
+    document.getElementById('addSlashButton')?.addEventListener('click', function (){
+            numSlash += 1;
+            //console.log("slash count", numSlash, "out of ", slashMax);
 
-        updateRandWords(numSlash);
+            if(numSlash == slashMax - 1){
+                addSlashButton.textContent = "How are we expected to be so many things at once?";
+            }
+            if(numSlash == slashMax){
+                addSlashButton.textContent = "It's almost unbearable.";
+            }
+            else if(numSlash > slashMax){
+                numSlash = 0;
+                addSlashButton.textContent = "Add a slash.";
+            }
+            else{
+                //console.log("added slash");
+            };        
+
+            updateRandWords(numSlash);
     });
 
     // Utility function to build random words with slashes between
@@ -68,6 +69,8 @@ export default function moRandomWord() {
            output += " / " + words.sample();
         }
 
-        randWord.textContent = output;
+        if(randWord){
+            randWord.textContent = output;
+        };
     };
 }
