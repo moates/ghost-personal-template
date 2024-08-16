@@ -1,6 +1,5 @@
 <div class="gh-container">
-    <div class="gh-postfeed">
-        <p>{{postlimit}}</p>
+    <div class="gh-postfeed">        
         {{#if postlimit}}            
             {{#foreach posts limit=postlimit }}
                 {{> "card" page=../pagination.page }} {{!-- partials/card.hbs --}}
