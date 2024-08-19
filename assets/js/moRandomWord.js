@@ -32,6 +32,7 @@ export default function moRandomWord() {
     //const randWordButton = document.getElementById('randWordButton');
     //const addSlashButton = document.getElementById('addSlashButton');
     var randWord = document.getElementById('randWord');
+    var randWordNote = document.getElementById('randWordNote');
 
 
     document.getElementById('randWordButton')?.addEventListener('click', function () {
@@ -45,14 +46,14 @@ export default function moRandomWord() {
             //console.log("slash count", numSlash, "out of ", slashMax);
 
             if(numSlash == slashMax - 1){
-                addSlashButton.textContent = "How are we expected to be so many things at once?";
+                randWordNote.textContent = "How can we be so many things at once?";
             }
             if(numSlash == slashMax){
-                addSlashButton.textContent = "It's almost unbearable.";
+                randWordNote.textContent = "It's almost unbearable.";
             }
             else if(numSlash > slashMax){
                 numSlash = 0;
-                addSlashButton.textContent = "Add a slash.";
+                randWordNote.textContent = "";
             }
             else{
                 //console.log("added slash");

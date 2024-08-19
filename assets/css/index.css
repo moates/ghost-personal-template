@@ -61,7 +61,7 @@ html,
     padding: 8vmin 0;
 }
 
-.gh-postfeed > *:first-child {
+.gh-postfeed>*:first-child {
     grid-column: 1 / -1;
 }
 
@@ -92,11 +92,64 @@ html,
 }
 
 /* Main - PERSONAL */
-.personal-head-title {
+.mo-head-title {
     font-size: 1.3em;
     text-wrap: nowrap;
 }
 
+
+.mo-button {  
+    /* for accessibility reasons, buttons should have a min size and margin */      
+    min-width: 44px;
+    min-height: 44px;
+    margin: 24px; 
+}
+
+.mo-randWordNote {
+    font-size: small;    
+}
+
+.mo-randwords {
+    font-size: xx-large;
+}
+
+.mo-randword-container {
+    display: grid;
+    gap: 3px;    
+    grid-template-columns:30% auto;    
+    grid-template-rows: max-content max-content 1fr 1em;
+    margin-bottom: 2em;
+}
+
+@media (max-width: 700px) {
+    .mo-randword-container {
+    grid-template-columns:10% auto;        
+    }
+}
+
+
+
+.mo-randword-item1 {  /* maggie is */ 
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    
+}
+
+.mo-randword-item2 { /* rand buttons */
+    grid-column: 2;
+    grid-row: 1 ;     
+}
+
+.mo-randword-item3 { /* randWords */
+    grid-column: 2;
+    grid-row: 3;        
+}
+
+.mo-randword-item4 { /* randNote */
+    grid-column: 1 / span 2;    
+    grid-row: 4;
+    justify-self: center;
+}
 
 
 /* Index
@@ -146,7 +199,7 @@ html,
     padding: 0 3vmin;
 }
 
-.gh-card-content > strong {
+.gh-card-content>strong {
     display: inline-block;
     padding: 1px 0;
     font-weight: 500;
@@ -168,7 +221,7 @@ html,
     margin: 4vmin 0 0 0;
 }
 
-.gh-page-head > p {
+.gh-page-head>p {
     max-width: 720px;
     margin: 0.3em auto 0;
     padding: 0 6vmin;
@@ -178,7 +231,7 @@ html,
 }
 
 @media (max-width: 700px) {
-    .gh-page-head > p {
+    .gh-page-head>p {
         font-size: 1.6rem;
     }
 }
@@ -251,13 +304,13 @@ html,
     margin: 0 0.75vmin;
 }
 
-.gh-author-links a + a:before {
+.gh-author-links a+a:before {
     display: block;
     content: "";
     margin: 0 1.25vmin 0 0;
     height: 1em;
     width: 1px;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
     transform: rotate(20deg);
 }
 
