@@ -7,7 +7,8 @@
     --color-primary: var(--ghost-accent-color, #FF69B4);
     --color-base: #131313;
     --color-border: #CF3E8A;
-    --color-bg: #FFC6E1;
+    --color-light:#FFC6E1;
+    --color-bg: #FFC6E1; /* can be set by user */
     --color-success: #80b912;
     --color-error: #f05230;
 
