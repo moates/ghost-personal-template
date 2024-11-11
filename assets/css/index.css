@@ -37,7 +37,7 @@ html,
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: #ffffff;
+    background: var(--color-bg);
 }
 
 .gh-main {
@@ -72,6 +72,9 @@ html,
 }
 
 
+.gh-head {
+    background-color: var(--color-navbar);
+}
 
 .gh-head-actions a:not(.gh-button) {
     display: inline-flex;
@@ -108,7 +111,7 @@ html,
 }
 
 .mo-hero-container { 
-    background-color: var(--color-bg);       
+    background-color: #E827A0;       
     margin-bottom: 6vmin;
 }
 
@@ -123,12 +126,13 @@ html,
 /* RANDOMIZE WORDS */
 /*******************/
 .mo-randword-button {
-    background-color: var(--color-border);
+    color: black;
+    background-color: #FF1493;
 }
 
 .mo-randword-button:hover {
-    color: var(--color-bg) !important;
-    box-shadow: inset 0 0 0 2px var(--color-bg);
+    color: black !important; 
+    box-shadow: inset 0 0 0 3px black;
 }
 
 .mo-randWordNote {

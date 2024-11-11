@@ -45,26 +45,26 @@
 }
 
 .gh-button {
-    color: var(--color-light);
-    background-color: var(--color-border);
-    box-shadow: inset 0 0 0 2px currentColor
+    color: var(--color-base);
+    background-color: var(--color-button-main);
+    box-shadow: inset 0 0 0 2px currentColor;
 }
 
 
 .gh-button:hover {
     text-decoration: none;
-    color: var(--color-primary) !important;
-    box-shadow: inset 0 0 0 8px var(--color-primary);
+    /*color: var(--color-button-alt) !important;*/
+    box-shadow: inset 0 0 0 8px var(--color-button-main);
     transition: 0.2s ease;
 }
 
 
-.gh-button.gh-button-primary {
+.gh-button.gh-button-primary { /* todo adjust colors? */
     color: #fff !important;
     background-color: var(--color-primary);
     box-shadow: none;
 }
 
-.gh-button.gh-button-primary:hover {
+.gh-button.gh-button-primary:hover { /* todo adjust colors? */
     background-color: var(--color-primary);
 }
