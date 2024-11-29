@@ -60,7 +60,7 @@
     ],
     "config": {
         "card_assets": true,
-        "posts_per_page": 6,
+        "posts_per_page": 6,             
         "image_sizes": {
             "xxs": {
                 "width": 30
@@ -80,7 +80,8 @@
             "xl": {
                 "width": 2000
             }
-        }
+        } 
+        
     },
     "type": "module"
 }
