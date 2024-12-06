@@ -2,15 +2,26 @@
 /* ---------------------------------------------------------- */
 
 .gh-head {
-    padding: 3vmin 4vmin;
+    padding: 0;
     font-size: 1.6rem;
     line-height: 1.3em;
     background: inherit;
+    pointer-events: none;
+}
+.gh-head{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
 }
 
 .gh-head a {
     color: inherit;
     text-decoration: none;
+    pointer-events: auto;
+}
+.gh-head button{
+    pointer-events: auto;
 }
 
 .gh-head-inner {
@@ -18,8 +29,19 @@
     grid-gap: 40px;
     grid-template-columns: 1fr auto 1fr;
     grid-auto-flow: row dense;
+    align-items: start;
 }
-
+.mo-head-title,
+.gh-head-menu .nav a{
+    background-color: #e827a0;
+    padding: 2rem;
+    font-family: var(--font-title);
+    text-transform: uppercase;
+}
+.gh-head-menu .nav a{
+    padding: 2rem !important;
+    width: 160px;
+}
 
 /* Brand
 /* ---------------------------------------------------------- */
@@ -59,10 +81,13 @@
     flex-wrap: wrap;
     align-items: center;
     list-style: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .gh-head-menu .nav li {
-    margin: 0 1.5vmin 0 0;
+    margin: 0 0 1.5vmin 0;
     padding: 0;
 }
 
@@ -72,7 +97,19 @@
 }
 
 .gh-head-menu .nav-current a {
-    box-shadow: 0 -1px 0 0 currentcolor inset;
+
+}
+.gh-head-menu .nav li:first-child a{
+    background-color:  #21c7ed;
+}
+.gh-head-menu .nav li:nth-of-type(2) a{
+    background-color:  #bd21ed;
+}
+.gh-head-menu .nav li:nth-of-type(3) a{
+    background-color:  #28ed21;
+}
+.gh-head-menu .nav li:nth-of-type(4) a{
+    background-color:  #ed5b21;
 }
 
 
@@ -93,6 +130,7 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
+    flex-direction: column;
 }
 
 .gh-head-actions-list a:not([class]) {

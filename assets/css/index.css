@@ -73,7 +73,7 @@ html,
 
 
 .gh-head {
-    background-color: var(--color-navbar);
+    background-color:transparent;
 }
 
 .gh-head-actions a:not(.gh-button) {
@@ -124,13 +124,14 @@ html,
 }
 
 .mo-hero-container { 
-    background-color: #E827A0;       
-    margin-bottom: 3vmin;
-    height: 69vh;
-    position: relative;
-    display: flex;
     align-items: center;
+    background-color: #e827a0;
+    display: flex;
+    height: 64vh;
     justify-content: center;
+    margin-bottom: 2vmin;
+    padding-top: 3rem;
+    position: relative;
 }
 
 .mo-hero-content {

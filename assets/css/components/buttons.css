@@ -2,15 +2,17 @@
 /* ---------------------------------------------------------- */
 
 .gh-button {
-    display: inline-block;
-    min-width: 75px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+    min-height: 60px;
     height: var(--height);
     padding: 0 2rem;
     border: 0;
-    border-radius: var(--radius);
     cursor: pointer;
-    font-family: var(--font-sans-serif);
-    font-size: 1.4rem;
+    font-family: var(--font-title);
+    font-size: 1.6rem;
     font-weight: var(--font-normal);
     line-height: var(--height);
     text-align: center;
