@@ -17,7 +17,7 @@ body {
     margin: 0;
     padding: 0;
     color: var(--color-base);
-    font-family: var(--font-sans-serif);
+    font-family: var(--font-text);
     font-size: 1.5rem;
     line-height: 1.6em;
     font-weight: 400;
@@ -187,11 +187,11 @@ h6 {
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
-}
+} */

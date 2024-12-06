@@ -64,14 +64,17 @@ export default function moRandomWord() {
 
     // Utility function to build random words with slashes between
     function updateRandWords(numSlashes) {
-        //console.log("numSlashes:", numSlashes);
-        let output = words.sample();
-        for(let i=0; i<numSlashes; i++){
-           output += " / " + words.sample();
+        // Pick the first random word and wrap it in a span
+        let output = `<span>${words.sample()}</span>`;
+        
+        // Add additional random words with slashes, wrapping each in a span
+        for (let i = 0; i < numSlashes; i++) {
+            output += ` / <span>${words.sample()}</span>`;
         }
 
-        if(randWord){
-            randWord.textContent = output;
-        };
+        // Update the randWord element with the generated HTML
+        if (randWord) {
+            randWord.innerHTML = output; // Use innerHTML to include the span tags
+        }
     };
 }

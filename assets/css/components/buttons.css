@@ -47,14 +47,11 @@
 .gh-button {
     color: var(--color-base);
     background-color: var(--color-button-main);
-    box-shadow: inset 0 0 0 2px currentColor;
 }
 
 
 .gh-button:hover {
     text-decoration: none;
-    /*color: var(--color-button-alt) !important;*/
-    box-shadow: inset 0 0 0 8px var(--color-button-main);
     transition: 0.2s ease;
 }
 
