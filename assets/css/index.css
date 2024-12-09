@@ -72,6 +72,7 @@ html,
 }
 
 
+
 .gh-head {
     background-color:transparent;
 }
@@ -182,6 +183,127 @@ html,
 }
 .gh-card{
     border: 0.5px solid;
+}
+
+@media (max-width: 1530px) {
+    .mo-hero-content { 
+        max-width: 1050px;  
+    }  
+    .mo-hero-content .mo-randword-item1 h1 {
+        font-size: 15rem;
+    } 
+}
+
+@media (max-width: 900px) {
+    .mo-hero-content { 
+        max-width: 100%;  
+        margin-bottom: 0 !important;
+        position: relative;
+    }  
+    .mo-hero-content .mo-randword-item1 h1 {
+        font-size: 10rem;
+        align-items: center;
+    } 
+    .mo-randword-item2{
+        position: relative;
+        text-align: center;
+        top: 20px;
+    }
+    #gh-head .gh-head-brand{
+        padding: 2rem;
+    }
+    .mo-hero-content .mo-randwords {
+        bottom: 0;
+        font-size: 5rem;
+        left: 0;
+        line-height: .9;
+        max-width: 100%;
+        padding: 0 2rem;
+        position: relative;
+        text-align: center;
+        top: 40px;
+    }
+    .mo-rand-word {
+        font-size: 1.8rem;
+    }
+    .mo-hero-content .mo-randword-container {
+        margin-bottom: 0;
+    }
+    .mo-randword-item4{
+        bottom: 20px;
+        display: block;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+    }
+    .mo-hero-container {
+        height: auto;
+        padding-top: 0;
+        padding-bottom: 0;
+        position: relative;
+    }
+    .mo-hero-container .mo-hero-content{        
+        padding: 0 0 11rem;
+    }
+    .gh-head{
+        position: relative;
+        background-color: #e827a0;
+    }
+    .mo-section-title{
+        font-size: 4rem;
+    }
+}
+@media (max-width: 1340px) and (min-width: 900px) {
+    .gh-head-menu .nav,
+    .gh-head-actions-list{
+        flex-direction: row;
+    }
+    .gh-head-menu .nav a {
+        padding: 2rem 1.5rem !important;
+        width: auto;
+    }
+    .mo-randword-item2 .mo-randword-button{
+        padding: 1rem 2rem;
+    }
+    .mo-hero-content .mo-randword-item1 h1 {
+        font-size: 14rem;
+    }
+    .mo-hero-container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+@media (max-width: 996px) and (min-width: 900px) {
+    .mo-randword-item2 .mo-randword-button {
+        padding: 1rem 1rem;
+    }
+    .mo-rand-word {
+        font-size: 1.8rem;
+        line-height: 1.4;
+        padding-right: 9rem;
+    }
+}
+@media (max-width: 500px) {
+    .mo-hero-container .mo-hero-content{        
+        padding: 0 0 11rem;
+    }
+    .mo-hero-content .mo-randword-item1 h1 {
+        align-items: center;
+        font-size: 5rem;
+    }
+    .mo-randword-item2 .mo-randword-button{
+        font-size: 1.6rem;
+        height: auto;
+        max-width: none;
+        padding: 0.5rem 1rem;
+    }
+    .mo-randword-item2{
+        top: 14px;
+    }
+    .mo-head-title{
+        padding: 0;
+    }
+
 }
 
 

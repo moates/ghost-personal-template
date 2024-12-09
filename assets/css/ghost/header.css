@@ -172,7 +172,7 @@
     margin: auto;
     content: '';
     width: 100%;
-    height: 1px;
+    height: 3px;
     background: currentcolor;
     transition: transform 300ms cubic-bezier(.2,.6,.3,1), width 300ms cubic-bezier(.2,.6,.3,1);
     will-change: transform, width;
@@ -188,7 +188,7 @@
     margin: auto;
     content: '';
     width: 100%;
-    height: 1px;
+    height: 3px;
     background: currentcolor;
     transition: transform 250ms cubic-bezier(.2,.7,.3,1), width 250ms cubic-bezier(.2,.7,.3,1);
     will-change: transform, width;
@@ -357,6 +357,19 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
     .gh-head-open #gh-head .gh-head-actions,
     .gh-head-open #gh-head .gh-head-menu {
         display: flex;
+    }
+    .gh-head-open:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #e827a0;
+        height: 100vh;
+        width: 100%;
+        z-index: 899;
+    }
+    .gh-head-menu .nav a{
+        width: auto;
     }
 }
 
