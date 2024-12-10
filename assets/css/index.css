@@ -162,12 +162,10 @@ html,
     top: 50px;
 }
 .mo-rand-word{
-    font-size: 3rem;
+    font-size: 30px;
     line-height: 1.4;
 }
-.mo-rand-word span:nth-child(odd){
-    color: #A00060;
-}
+
 .mo-randWordNote{
     background: #000;
     color: #e827a0; 
@@ -175,7 +173,7 @@ html,
 .mo-section-title{
     font-family: var(--font-title);
     text-transform: uppercase;
-    font-size: 7rem;
+    font-size: 70px;
     margin-bottom: 0;
 }
 .gh-card-title{
@@ -190,7 +188,7 @@ html,
         max-width: 1050px;  
     }  
     .mo-hero-content .mo-randword-item1 h1 {
-        font-size: 15rem;
+        font-size: 150px;
     } 
 }
 
@@ -201,7 +199,7 @@ html,
         position: relative;
     }  
     .mo-hero-content .mo-randword-item1 h1 {
-        font-size: 10rem;
+        font-size: 100px;
         align-items: center;
     } 
     .mo-randword-item2{
@@ -210,21 +208,21 @@ html,
         top: 20px;
     }
     #gh-head .gh-head-brand{
-        padding: 2rem;
+        padding: 20px;
     }
     .mo-hero-content .mo-randwords {
         bottom: 0;
-        font-size: 5rem;
+        font-size: 50px;
         left: 0;
         line-height: .9;
         max-width: 100%;
-        padding: 0 2rem;
+        padding: 0 20px;
         position: relative;
         text-align: center;
         top: 40px;
     }
     .mo-rand-word {
-        font-size: 1.8rem;
+        font-size: 18px;
     }
     .mo-hero-content .mo-randword-container {
         margin-bottom: 0;
@@ -243,14 +241,17 @@ html,
         position: relative;
     }
     .mo-hero-container .mo-hero-content{        
-        padding: 0 0 11rem;
+        padding: 0 0 110px;
     }
     .gh-head{
         position: relative;
         background-color: #e827a0;
     }
     .mo-section-title{
-        font-size: 4rem;
+        font-size: 40px;
+    }
+    .gh-container .mo-tags{
+        margin-top: 20px;
     }
 }
 @media (max-width: 1340px) and (min-width: 900px) {
@@ -259,49 +260,53 @@ html,
         flex-direction: row;
     }
     .gh-head-menu .nav a {
-        padding: 2rem 1.5rem !important;
+        padding: 20px 15px !important;
         width: auto;
     }
     .mo-randword-item2 .mo-randword-button{
-        padding: 1rem 2rem;
+        padding: 10px 20px;
     }
     .mo-hero-content .mo-randword-item1 h1 {
-        font-size: 14rem;
+        font-size: 140px;
     }
     .mo-hero-container{
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 20px;
+        padding-right: 20px;
     }
+
 }
 @media (max-width: 996px) and (min-width: 900px) {
     .mo-randword-item2 .mo-randword-button {
-        padding: 1rem 1rem;
+        padding: 10px 10px;
     }
     .mo-rand-word {
-        font-size: 1.8rem;
+        font-size: 18px;
         line-height: 1.4;
-        padding-right: 9rem;
+        padding-right: 90px;
     }
 }
 @media (max-width: 500px) {
     .mo-hero-container .mo-hero-content{        
-        padding: 0 0 11rem;
+        padding: 0 0 110px;
     }
     .mo-hero-content .mo-randword-item1 h1 {
         align-items: center;
-        font-size: 5rem;
+        font-size: 50px;
     }
     .mo-randword-item2 .mo-randword-button{
-        font-size: 1.6rem;
+        font-size: 16px;
         height: auto;
         max-width: none;
-        padding: 0.5rem 1rem;
+        padding: 5px 10px;
     }
     .mo-randword-item2{
         top: 14px;
     }
     .mo-head-title{
         padding: 0;
+    }
+    .mo-box-link{
+        padding: 10px 10px !important;
     }
 
 }
@@ -313,8 +318,8 @@ html,
 .mo-randword-button {
     background-color: #ff69b4;
     color: #000;
-    font-size: 1.8rem;
-    padding: 1rem 3rem;
+    font-size: 18px;
+    padding: 10px 30px;
     height: auto;
     width: auto;
     max-width: initial;
@@ -362,7 +367,7 @@ html,
     bottom: 3rem;
 }
 .mo-randword-item1 h1{
-    font-size: 17rem;
+    font-size: 170px;
     display: flex;
     flex-direction: column;
 }
@@ -415,8 +420,8 @@ html,
 .mo-box-link {
     background-color: #ff69b4;
     color: #000;
-    font-size: 1.8rem;
-    padding: 2rem 4rem;
+    font-size: 18px;
+    padding: 20px 40px;
     height: auto;
     width: auto;
     max-width: initial;
@@ -444,12 +449,14 @@ html,
 }
 
 .mo-tags{
+    align-items: center;
     display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        padding: 2vmax;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 2vmax;
+    max-width: 90%;
+    margin: 60px auto 0;
 }
 
 /* Index
