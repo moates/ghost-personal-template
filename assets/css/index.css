@@ -310,7 +310,9 @@ html,
     }
 
 }
-
+.gh-head-actions-list .gh-search-icon{
+    height: 62px !important;
+}
 
 /*******************/
 /* RANDOMIZE WORDS */
@@ -509,11 +511,13 @@ html,
 }
 
 .gh-card-content>strong {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    font-weight: 500;
     background-color: #000;
-    color: #ffc0cb;
+    color: pink;
+    display: inline-block;
+    font-weight: 500;
+    padding: 1rem 1.5rem;
+    margin: 12px;
+    line-height: 1;
 }
 
 
