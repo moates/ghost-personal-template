@@ -7,7 +7,107 @@ hint: Some classes are in content.css
 }
 
 
+/******************/
+/* BLOCK QUOTES */
+/******************/
+.kg-blockquote-alt {
+    font-size: 1.5em;
+    font-style:italic;
+    line-height: 1.7em;
+
+    text-align: center;
+    padding: 0 2.5em;
+}
+
+
+
+
+/******************/
+/* FILE LINKS */
+/******************/
+.kg-file-card {
+    width: 100%;
+    margin-top: 1em;
+
+}
+
+.kg-file-card-container {
+    display: flex;
+    min-height: 4em;
+    color: var(--color-base);
+
+  
+    border-radius: 3px;
+    border-style: solid;
+    border-color: var(--color-border);
+}
+
+.kg-file-card-container:hover {
+    border-style: dashed;
+}
+
+.kg-file-card-contents {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0.5em 0.5em;
+    width:100%;
+}
+
+.kg-file-card-title {
+    font-size: medium;
+    font-weight: var(--font-bold);
+    line-height: 1.5em;
+
+    display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow-y: hidden;
+}
+
+.kg-file-card-caption {
+    display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow-y: hidden;
+}
+
+.kg-file-card-metadata {
+    font-size: smaller;
+
+    display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow-y: hidden;
+}
+
+.kg-file-card-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: bottom;
+    
+    min-width: 4em;    
+    max-height: 100%;
+   
+    margin: 0.5em;
+}
+
+.kg-file-card-icon svg  {
+    color: var(--color-border);
+}
+
+
+
+/******************/
 /* BOOKMARK LINKS */
+/******************/
 
 .kg-bookmark-card {
  width: 100%;
