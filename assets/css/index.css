@@ -40,6 +40,9 @@ html,
     min-height: 100vh;
     background: var(--color-bg);
 }
+.gh-viewport{
+    padding-top: 6rem;
+}
 
 .gh-main {
     flex: 1 0 auto;
@@ -253,6 +256,9 @@ html,
     }
     .gh-container .mo-tags{
         margin-top: 20px;
+    }
+    .gh-viewport {
+        padding-top: 0;
     }
 }
 @media (max-width: 1340px) and (min-width: 900px) {
@@ -638,4 +644,5 @@ html,
     .gh-author-meta {
         font-size: 1.6rem;
     }
+
 }
