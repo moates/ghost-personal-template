@@ -40,7 +40,7 @@ html,
     min-height: 100vh;
     background: var(--color-bg);
 }
-.gh-viewport{
+.page-portfolio .gh-viewport{
     padding-top: 6rem;
 }
 
@@ -257,7 +257,7 @@ html,
     .gh-container .mo-tags{
         margin-top: 20px;
     }
-    .gh-viewport {
+    .page-portfolio .gh-viewport {
         padding-top: 0;
     }
 }
