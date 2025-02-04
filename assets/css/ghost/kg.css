@@ -6,6 +6,29 @@ hint: Some classes are in content.css
 
 }
 
+/******************/
+/* KG BUTTONS     */
+/******************/
+
+.kg-button-card {
+    
+}
+
+.kg-button-card a.kg-btn-accent {
+    background-color: var(--color-button-main) !important;
+    color: var(--color-base) !important;
+    box-shadow: 0 4px 4px 0 var(--color-button-alt);
+
+    padding: 1.5em !important;
+    max-width: 80%;
+    min-height: 2.4em !important;
+    height: 100% !important;
+}
+
+.kg-button-card a.kg-btn-accent:hover {
+    box-shadow: 0 6px 6px 0 var(--color-button-alt);
+}
+
 
 /******************/
 /* BLOCK QUOTES */
