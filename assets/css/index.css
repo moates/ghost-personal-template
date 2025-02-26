@@ -98,6 +98,11 @@ html,
     height: 2rem;
 }
 
+.mo-page-head {
+    padding: 8vmin 0;
+}
+
+
 .font-title{
     font-family: var(--font-title);
     font-optical-sizing: auto;
@@ -112,7 +117,7 @@ html,
 }
 
 /* Main - PERSONAL */
-.mo-head-title {
+.mo-page-header {
     font-size: 1.3em;
     text-wrap: nowrap;
 }
