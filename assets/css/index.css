@@ -328,32 +328,39 @@ html,
     max-width: initial;
     font-family: var(--font-title);
     border-radius: 0 !important;
-    border: 4px solid #21c7ed;
-    -webkit-animation: glowing 1500ms infinite;
-    -moz-animation: glowing 1500ms infinite;
-    -o-animation: glowing 1500ms infinite;
-    animation: glowing 1500ms infinite;
+    border: 4px solid var(--color-border);
   }
+
+.mo-glowing{
+    -webkit-animation: glowing 2s infinite;
+    -moz-animation: glowing 2s infinite;
+    -o-animation: glowing 2s infinite;
+    animation: glowing 2s infinite;
+
+}
   @keyframes glowing {
     0% {
-      background-color: #ff69b4;
+      /*background-color: #ff69b4;*/
       box-shadow: 0 0 3px #ff69b4;
     }
-    50% {
-      background-color: #ff69b4;
-      box-shadow: 0 0 15px #ff69b4;
+    30% {
+      /*background-color: var(--color-light);*/
+      box-shadow: 0 0 15px #0091b2
+    }
+    70% {
+      /*background-color: var(--color-light);*/
+      box-shadow: 0 0 3px #0091b2;
     }
     100% {
-      background-color: #21c7ed;
-      box-shadow: 0 0 3px #0091b2;
+      /*background-color: #ff69b4;*/
+      box-shadow: 0 0 3px #ff69b4;
     }
   }
 
 .mo-randword-button:hover {
     color: black !important; 
-    box-shadow: inset 0 0 0 3px #e827a0;
     animation: none;
-    background-color: #21c7ed;
+    box-shadow: 0 0 15px #0091b2;
 }
 
 .mo-randWordNote {

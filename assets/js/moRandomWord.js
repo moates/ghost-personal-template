@@ -37,6 +37,8 @@ export default function moRandomWord() {
 
     document.getElementById('randWordButton')?.addEventListener('click', function () {
          updateRandWords(numSlash);
+         document.getElementById('randWordButton')?.classList.remove('mo-glowing');
+         document.getElementById('addSlashButton')?.classList.add('mo-glowing');
     });
 
 
@@ -50,6 +52,8 @@ export default function moRandomWord() {
             }
             if(numSlash == slashMax){
                 randWordNote.textContent = "It's almost unbearable.";
+                document.getElementById('randWordButton')?.classList.remove('mo-glowing');
+                document.getElementById('addSlashButton')?.classList.remove('mo-glowing');
             }
             else if(numSlash > slashMax){
                 numSlash = 0;
