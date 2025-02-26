@@ -69,7 +69,7 @@ export default function moRandomWord() {
     // Utility function to build random words with slashes between
     function updateRandWords(numSlashes) {
         // Pick the first random word and wrap it in a span
-        let output = `<span>${words.sample()}</span>`;
+        let output = `<span>is ${words.sample()}</span>`;
         
         // Add additional random words with slashes, wrapping each in a span
         for (let i = 0; i < numSlashes; i++) {
