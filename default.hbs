@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{{asset "built/index.css"}}" />
     <script src="{{asset "built/index.js"}}" defer></script>
 
-    <title>{{meta_title}}</title>
+    <title>{{{block "title"}}}</title>
 
     {{ghost_head}}
     {{!-- Outputs important meta data and settings, should always be in <head> --}}

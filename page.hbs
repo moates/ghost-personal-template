@@ -1,10 +1,12 @@
 {{!< default}}
 
 {{#post}}
+{{#contentFor "title"}}{{meta_title}}{{/contentFor}}
+
 <article class="gh-article {{post_class}}">
     {{#match @page.show_title_and_feature_image}}
-    <header class="gh-header gh-canvas">
-        <h1 class="gh-title">{{title}}</h1>
+    <header class="gh-header gh-canvas mo-page-head">
+        <h1 class="gh-title">{{{block "title"}}}</h1>
 
         {{#if custom_excerpt}}
             <p class="gh-excerpt">{{custom_excerpt}}</p>

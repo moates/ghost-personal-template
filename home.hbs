@@ -19,7 +19,7 @@
         <h2 class="mo-section-title">Recent Projects</h2>
 
         <div class="gh-postfeed">
-            {{#get "posts" filter="tag:hash-project" limit="3" as |projects|}}
+            {{#get "posts" filter="tag:hash-project" limit="4" as |projects|}}
                 {{#foreach projects}}
 
                     {{> "card"  }} {{!-- partials/card.hbs --}}
@@ -32,7 +32,7 @@
 
         <h2 class="mo-section-title">Recent Blogs</h2>
         <div class="gh-postfeed">        
-            {{#get "posts" filter="tag:hash-blog" limit="3" as |blogs| }}
+            {{#get "posts" filter="tag:hash-blog" limit="4" as |blogs| }}
                 {{#foreach blogs}}
 
                     {{> "card"  }} {{!-- partials/card.hbs --}}
