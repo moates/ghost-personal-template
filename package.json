@@ -1,5 +1,5 @@
 {
-    "name": "ghost-personal-theme",
+    "name": "mo-personal-theme",
     "description": "A Ghost theme for a personal portfolio",
     "demo": "https://starter.ghost.io",
     "version": "1.0.0",
@@ -59,11 +59,9 @@
         "defaults"
     ],
     "config": {
-        "card_assets": true,
-        "card_assets" : {
-            "exclude" : ["nft"]
+        "card_assets": {
         },
-        "posts_per_page": 6,             
+        "posts_per_page": 6,
         "image_sizes": {
             "xxs": {
                 "width": 30
@@ -83,8 +81,7 @@
             "xl": {
                 "width": 2000
             }
-        } 
-        
+        }
     },
     "type": "module"
 }
