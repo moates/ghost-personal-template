@@ -24,10 +24,10 @@ production stylesheet in assets/built/screen.css using: npm run dev
 @import "ghost/badge.css";
 @import "ghost/pagination.css";
 @import "ghost/comments.css";
-@import "ghost/kg.css";
 
 /* Personal theme components" */
 @import "home.css";
+@import "kg.css";
 
 
 /* Main - Your styles here! Edit below

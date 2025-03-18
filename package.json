@@ -1,5 +1,5 @@
 {
-    "name": "moates-ghost-personal-theme",
+    "name": "moates-pink-ghost-theme",
     "description": "A Ghost theme for a personal portfolio",
     "demo": "https://starter.ghost.io",
     "version": "1.0.0",
@@ -13,7 +13,7 @@
     "scripts": {
         "dev": "rollup -c --environment BUILD:development -w",
         "build": "rollup -c --environment BUILD:production",
-        "zip": "npm run build && bestzip $npm_package_name.zip assets/* partials/* members/* *.hbs package.json",
+        "zip": "npm run build && bestzip %npm_package_name%.zip assets/* partials/* members/* *.hbs package.json",
         "test": "npx gscan .",
         "pretest": "npm run build"
     },
