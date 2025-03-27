@@ -2,8 +2,13 @@
 {{!< default}}
 {{#contentFor "title"}}Blog Posts{{/contentFor}}
 
-<div class="gh-page">    
-    {{> "page-header"}}
+<div class="gh-article">
+<div class="">    
+    <header class="gh-header gh-canvas mo-page-head">
+        <h1 class="gh-title">{{{block "title"}}}</h1>
+    </header>
+
     {{> "postlister"}}
+</div>
 </div>
 

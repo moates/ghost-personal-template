@@ -2,12 +2,19 @@
 
 {{#contentFor "title"}}Portfolio{{/contentFor}}
 
-<div class="gh-page">  
-    {{> "page-header"}}
+<div class="gh-article" 
+<div class="">  
+    <header class="gh-header gh-canvas mo-page-head">
+        <h1 class="gh-title">{{{block "title"}}}</h1>
+    </header>
+    
+
+    <div class="gh-content gh-canvas">        
     
     {{> "category-buttons" }}
     
 
     {{> "postlister" postlimit="40"}}
-
+    </div>
+    </div>
 </div>

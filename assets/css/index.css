@@ -258,7 +258,7 @@ html,
         font-size: 40px;
     }
     .gh-container .mo-tags{
-        margin-top: 20px;
+        /*margin-top: 20px;*/
     }
 }
 @media (max-width: 1530px) and (min-width: 900px) {
@@ -472,7 +472,7 @@ html,
     justify-content: center;
     padding: 2vmax;
     max-width: 90%;
-    margin: 60px auto 0;
+    
 }
 
 /* Index
@@ -574,7 +574,7 @@ html,
 /* ---------------------------------------------------------- */
 
 .gh-header {
-    padding: 0 0 8vmin 0;
+    padding: 0 0 4vmin 0;
     text-align: center;
 }
 
