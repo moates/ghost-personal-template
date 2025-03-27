@@ -98,9 +98,10 @@ html,
     height: 2rem;
 }
 
+/*
 .mo-page-head {
     padding: 8vmin 0;
-}
+}*/
 
 
 .font-title{
@@ -260,7 +261,7 @@ html,
         margin-top: 20px;
     }
 }
-@media (max-width: 1340px) and (min-width: 900px) {
+@media (max-width: 1530px) and (min-width: 900px) {
     .gh-head-menu .nav,
     .gh-head-actions-list{
         flex-direction: row;
