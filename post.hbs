@@ -6,7 +6,8 @@
 <article class="gh-article {{post_class}}">
 
     <header class="gh-header gh-canvas">
-        <span class="gh-post-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time> <span class="bull">&bull;</span> {{reading_time}}</span>
+        <span class="gh-post-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time> <span class="bull">&bull;</span> {{reading_time}} 
+        </span>
         <h1 class="gh-title">{{title}}</h1>
 
         {{#if custom_excerpt}}
@@ -60,13 +61,19 @@
 
     <div class="gh-content gh-canvas">
         {{content}}
+        <div><p></p></div>
     </div>
 
+    
 
     <footer class="gh-footer gh-canvas">        
 
         <div class="gh-post-authors">
             Written by {{#foreach authors}}<a href="{{url}}">{{name}}</a>{{/foreach}}
+        </div>
+
+        <div>
+            Note: This was published {{date published_at timeago="true"}}. I ask that generous readers please keep in mind that I am an evolving creature in an evolving world. Opinions, context, and facts change. 
         </div>
 
         <div class="">
